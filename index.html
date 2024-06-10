@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <!-- Body -->
+  <body>
+    <main class="vh-100">
+      <div class="container h-100">
+        <!-- Signin Card -->
+        <div
+          id="signinPage"
+          class="d-flex justify-content-center align-items-center h-100"
+        >
+          <div
+            class="card shadow-lg p-5 w-50 d-flex justify-content-center align-items-center"
+          >
+            <div class="form-floating w-100 mb-3">
+              <!-- signin email -->
+              <input
+                type="input"
+                class="form-control"
+                id="signinEmailInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating w-100">
+              <!-- signin password -->
+              <input
+                type="password"
+                class="form-control"
+                id="signinPasswordInput"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <h5 class="text-danger mt-2 d-none inc">Incorrect Email or Password</h5>
+            <h5 class="text-danger mt-2 d-none emp">Must fill all inputs</h5>
+            <button id="signinBtn" type="button" class="btn btn-outline-light my-3 w-50">
+              Sign in
+            </button>
+            <h6 class="text-light">
+              Don’t have an account?
+              <span id="signupPageA" href="">Sign Up</span>
+            </h6>
+          </div>
+        </div>
+        <!-- Signup Card -->
+        <div
+          id="signupPage"
+          class="d-none justify-content-center align-items-center h-100"
+        >
+          <div
+            class="card shadow-lg p-5 w-50 d-flex justify-content-center align-items-center"
+          >
+            <div class="form-floating w-100 mb-3">
+              <input
+                type="input"
+                class="form-control"
+                id="signupNameInput"
+                placeholder="Name"
+              />
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating w-100 mb-3">
+              <input
+                type="input"
+                class="form-control"
+                id="signupEmailInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating w-100">
+              <input
+                type="password"
+                class="form-control"
+                id="signupPasswordInput"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <h5 class="text-danger mt-2 d-none empup">Must fill all inputs</h5>
+            <h5 class="text-danger mt-2 d-none incup">Incorrect input formats</h5>
+            <h5 class="text-danger mt-2 d-none exs">Email already Exists</h5>
+            <button id="signup-btn" type="button" class="btn btn-outline-light my-3 w-50">
+              Register
+            </button>
+            <h6 class="text-light">
+              You have an account? <span id="signinPageA" href="">Sign in</span>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

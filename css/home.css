@@ -1,0 +1,17 @@
+:root {
+  --main-bg-color-rgb: 0, 0, 0;
+  --card-bg-color-rgb: 67, 135, 244;
+}
+
+section {
+  background-image: linear-gradient(
+      rgba(var(--main-bg-color-rgb), 0.6),
+      rgba(var(--main-bg-color-rgb), 0.6)
+    ),
+    url(../imgs/bg.webp);
+  background-size: 100% 100%;
+  h1{
+    font-size: 5rem;
+    color: lightblue;
+  }
+}

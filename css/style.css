@@ -1,0 +1,26 @@
+:root {
+  --main-bg-color-rgb: 0, 0, 0;
+  --card-bg-color-rgb: 67, 135, 244;
+}
+
+/* a{
+    text-decoration: none;
+    color: inherit;
+} */
+
+span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  background-image: linear-gradient(
+      rgba(var(--main-bg-color-rgb), 0.6),
+      rgba(var(--main-bg-color-rgb), 0.6)
+    ),
+    url(../imgs/bg.webp);
+  background-size: 100% 100%;
+  .card {
+    background-color: rgba(var(--card-bg-color-rgb), 0.6);
+  }
+}
